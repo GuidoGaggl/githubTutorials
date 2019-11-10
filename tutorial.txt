@@ -1,0 +1,56 @@
+GIT- TUTORIAL
+=============
+every # indicates the keyword "git" for all upcomming commands
+
+
+# --version: 							--> shows the version of git
+# config --global user.name <"myname">	--> to create username
+# config --global user.email <"myname">	--> to create user-email
+# config --list							--> shows all configurations on screen
+clear 									--> (linux) cleares screen 
+
+# config user.email		--> shows user-email config (used without parameter)
+pwd 					--> (linux) shows current directory
+# init					--> creates git repository (starts git project)
+# add <file>			--> adds <file> (current localy safed version) to staging area
+# add . 				--> adds all files (etc) in folder to staging area
+commit					--> commits all added files/chances to branch
+commit -m <"commit message">		--> commit plus additional <" commit -message">
+
+
+
+# help					--> help info to git
+# help <git-command>	--> help to specific git commmand (could open help website)
+# log					--> shows all recently made commits (author / date / message)
+# log  --author=<"name">--> only shows commits from Guido Gaggl
+# status				--> compares status of local directory with "local" repository
+
+
+!! working flow!! 
+working copy    --add-->   staging area   --commit-->    repository
+
+
+# diff					--> shows exact difference between repository-files and working copy
+# diff --staged			--> shows exact difference between repository-files and staging area
+# rm <"file">			--> removes <"file"> from repository & working copy
+							(don't forget to commit it)							
+# mv <old> <new>		--> reneames<"old"> into <"new"> in repository and the working copy
+# mv <old> <dir>/<new>	--> rename and move <old> to directory <dir>
+
+
+# commit -a 				--> commits all modest chances of working copy directly to repository
+# checkout -- <file>		--> makes <file> from repository to your working copy 
+# restore --staged <file>	--> unstage file from staging area
+
+
+!! jumping back to old versions of project !!
+first > second > third > forth(wrong)
+first > second > third > forth(wrong) > third
+# checkout <commit_nr> -- <file>	--> makes <file> from repository (specific commit:
+										<commit_nr>) (from git log) to your working copy
+
+
+!!creating github project and connecting it to local repository !!
+github -> new repository -> naming project + starting settings ->  go to local workspace ->
+-> create directory + git repository ->  setup a remote between github(online) and local repo
+-> 

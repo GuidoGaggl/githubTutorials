@@ -53,4 +53,12 @@ first > second > third > forth(wrong) > third
 !!creating github project and connecting it to local repository !!
 github -> new repository -> naming project + starting settings ->  go to local workspace ->
 -> create directory + git repository ->  setup a remote between github(online) and local repo
--> 
+
+
+# remote add <nickname> <github-url>	--> creates a remote between github project			
+											and local repository (type command in lovcal rep
+# remote 								--> shows all online remotes to repository
+# push -u <nickname> <barnch>			--> pushes all files from(+ history)from local
+											repository to online project
+											(<branch> z.B ==  master)
+									
